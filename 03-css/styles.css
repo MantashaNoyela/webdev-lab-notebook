@@ -1,1 +1,206 @@
 /* Add your CSS code here  */
+:root {
+    --background-color: #f7f7f7;
+    --text-color: #333333;
+    --ice-blue-juvie: #8fbcd4;
+    --gothic-gray-blue: #6f8796;
+    --dark-slate-infinity: #1f2a33;
+    --gray-border: #cccccc;
+    --table-emphasis-background: #e9e8e8;
+    --table-background: #f4f4f4;
+
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+/* Navigation Styles*/
+.nav {
+    background-color: var(--dark-slate-infinity);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 1rem;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.nav-link {
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--ice-blue-juvie);
+    transition: 
+        background 0.2s,
+        color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: var(--ice-blue-juvie);
+    color: var(--dark-slate-infinity);
+}
+
+/* Main area styles */
+.books-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.main-heading {
+    margin: 2rem;
+    text-align: center;
+    color: var(--gothic-gray-blue);
+}
+
+.font-cinzeln {
+    font-family: 'Cinzel';
+}
+
+/* Section styles*/
+.section {
+    margin-top: 2rem;
+}
+
+.h2 {
+    border-bottom: 1px solid var(--gray-border);
+}
+
+/* Book list styles*/
+.books-list li {
+    margin-bottom: 0.5rem;
+}
+
+.books-list li > ol {
+    margin-top: 0.4rem;
+}
+
+/* Images styles */
+.images-container {
+    text-align: center;
+}
+
+.book-image {
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.book-image:hover {
+    transform: scale(1.1);
+}
+
+/* Table Styles */
+.table {
+    border-collapse: collapse;
+}
+
+.table th,
+table td {
+    border: 1px solid var(--gray-border);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.table tr:nth-child(even) {
+    background-color: var(--table-background);
+}
+
+.table-heading {
+    background-color: var(--table-heading-background);
+}
+
+.table-footer td {
+  font-weight: bold;
+  background-color: var(--table-emphasis-background);
+}
+
+/* Form - IRA Calculator */
+
+.form-container {
+  max-width: 420px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: var(--form-background);
+  border-radius: 10px;
+}
+
+.form-element {
+  margin-bottom: 0.5rem;
+  border: 0;
+}
+
+.form-label {
+  display: inline-block;
+  width: 40%;
+}
+
+.form-input {
+  display: inline-block;
+  width: 45%;
+  border: 1px solid var(--gray-border);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.color-bg-blue {
+  background-color: var(--form-accent-color);
+}
+
+.main-heading-form {
+  color: var(--form-accent-color);
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 48%;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 6px;
+}
+
+.btn-submit {
+  background-color: var(--form-accent-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-submit:hover {
+  background-color: var(--form-midnight-blue);
+}
+
+.btn-reset {
+  background-color: var(--gray-border);
+}
+
+.btn-reset:hover {
+  background-color: gray;
+}
+
+.form-note {
+  font-size: 0.8rem;
+}
+
+.form-fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.form-radios {
+  margin-left: 2rem;
+  margin-bottom: 0.75rem;
+}
