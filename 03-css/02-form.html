@@ -6,117 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Exercise 02 - Form</title>
     <link rel="stylesheet" href="styles.css" />
+   
   </head>
   <body class="color-bg-blue">
     <main class="form-container">
-      <form method="post" class="ira-form">
-        <h1 class="main-heading-form">Roth IRA Calculator</h1>
-        <div class="form-element">
-          <label class="form-label" for="balance">Balance ($):</label>
-
-          <input
-            class="form-input"
-            type="number"
-            id="balance"
-            name="balance"
-            required
-          />
+      <form action="" class="ira-form">
+        <h1 class="main-heading-form">Roth TRA Calculator</h1>
+         <div class="form-element">
+          <label class="form-label" for="balance">Balance ($)</label>
+          <input class="form-input" type="text" id="balance">
         </div>
-
-        <div class="form-element">
-          <label class="form-label" for="contribution"
-            >Annual Contribution ($)</label
-          >
-
-          <input
-            class="form-input"
-            type="number"
-            id="contribution"
-            name="contribution"
-            required
-          />
+        
+         <div class="form-element">
+          <label class="form-label" for="annual_contribution">
+            Annual Contribution ($)
+          </label>
+          <input class="form-input" type="text" id="annual_contribution">
         </div>
-
-        <fieldset class="form-fieldset">
-          <legend class="form-legend">Maximize Contributions?</legend>
+        
+        <fieldset>
+          <legend>Maximize Contributions?</legend>
           <div class="form-radios">
-            <input
-              class="form-radio"
-              type="radio"
-              id="maximize-yes"
-              name="maximize"
-              value="yes"
-            />
-            <label for="maximize-yes">Yes</label>
-            <input
-              class="form-radio"
-              type="radio"
-              id="maximize-no"
-              name="maximize"
-              value="no"
-            />
-            <label for="maximize-no">No</label>
+            <input type="radio" name="maximize_contribution" id="yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" name="maximize_contribution" id="no" />
+            <label for="no">No</label>
           </div>
         </fieldset>
-
-        <div class="form-element">
-          <label class="form-label" for="rate"
-            >Expected rate of return (%):</label
-          >
-
-          <input
-            class="form-input"
-            type="number"
-            id="rate"
-            name="rate"
-            step="0.1"
-            required
-          />
+        
+         <div class="form-element">
+          <label class="form-label" for="rate_return">
+            Expected rate of return (%)
+          </label>
+          <input class="form-input" type="number" id="rate_return">
         </div>
-
-        <div class="form-element">
-          <label class="form-label" for="current age">Current age</label>
-
-          <input
-            class="form-input"
-            type="number"
-            id="current age"
-            name="current age"
-            required
-          />
+        
+         <div class="form-element">
+          <label class="form-label" for="current_age">Current Age</label>
+          <input class="form-input" type="number" id="current_age">
         </div>
-
-        <div class="form-element">
-          <label class="form-label" for="Retirement age">Retirement age</label>
-
-          <input
-            class="form-input"
-            type="number"
-            id="Retirement age"
-            name="Retirement age"
-            required
-          />
+        
+         <div class="form-element">
+          <label class="form-label" for="age_retirement">Retirement Age</label>
+          <input class="form-input" type="number" id="age_retirement">
         </div>
-
-        <div class="form-element">
-          <label class="form-label" for="tax rate">Marginal tax rate (%)</label>
-
-          <input
-            class="form-input"
-            type="number"
-            id="tax rate"
-            name="tax rate"
-            step="0.1"
-            required
-          />
+        
+         <div class="form-element">
+          <label class="form-label" for="tax_rate">
+            Marginal Tax Rate (%)
+          </label>
+          <input class="form-input" type="number" id="tax_rate">
         </div>
-        <div class="form-element">
-          <button class="btn btn-submit" type="submit">Calculate</button>
-          <button class="btn btn-reset" type="reset">Reset</button>
+        
+         <div class="form-element">
+          <input class="btn btn-submit" type="submit" value="Calculator">
+          <input class="btn btn-reset" type="reset" value="Reset">
         </div>
         <p class="form-note">
-          This exercise is a simplified version of the Roth IRA Calculator at
-          <a href="https://www.calculator.net">Calculator.net</a>
+          This exercise is a simplified version of the Roth IRA Calculator at 
+          <a href="https://www.calculator.net/roth-ira-calculator.html"
+            >Calculator.net</a>
         </p>
       </form>
     </main>

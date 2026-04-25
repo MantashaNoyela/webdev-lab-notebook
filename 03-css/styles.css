@@ -8,7 +8,9 @@
     --gray-border: #cccccc;
     --table-emphasis-background: #e9e8e8;
     --table-background: #f4f4f4;
-
+    --form-white: #fefefe;
+    --midnight-blue: #161678;
+    --midnight-blue-dark: #0b0b4f;
 
 }
 
@@ -19,6 +21,13 @@ body {
     color: var(--text-color);
     line-height: 1.6;
 }
+
+fieldset {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
 /* Navigation Styles*/
 .nav {
     background-color: var(--dark-slate-infinity);
@@ -57,6 +66,7 @@ body {
 .books-container {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 50px;
     padding: 0 1rem;
 }
 .main-heading {
@@ -107,7 +117,7 @@ body {
 }
 
 .table th,
-table td {
+.table td {
     border: 1px solid var(--gray-border);
     padding: 0.5rem;
     text-align: center;
@@ -118,7 +128,7 @@ table td {
 }
 
 .table-heading {
-    background-color: var(--table-heading-background);
+    background-color: var(--table-emphasis-background);
 }
 
 .table-footer td {
@@ -126,81 +136,71 @@ table td {
   background-color: var(--table-emphasis-background);
 }
 
-/* Form - IRA Calculator */
-
+/* Form - IRA Roth Calculator */
 .form-container {
-  max-width: 420px;
-  margin: 100px auto;
-  padding: 2rem;
-  background-color: var(--form-background);
-  border-radius: 10px;
-}
-
-.form-element {
-  margin-bottom: 0.5rem;
-  border: 0;
-}
-
-.form-label {
-  display: inline-block;
-  width: 40%;
-}
-
-.form-input {
-  display: inline-block;
-  width: 45%;
-  border: 1px solid var(--gray-border);
-  border-radius: 6px;
-  padding: 0.5rem;
+    max-width: 420px;
+    margin: 100px auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--form-white);
 }
 
 .color-bg-blue {
-  background-color: var(--form-accent-color);
+    background-color: var(--midnight-blue-dark);
 }
 
 .main-heading-form {
-  color: var(--form-accent-color);
-  text-align: center;
+    text-align: center;
+    color: var(--midnight-blue);
 }
 
-.btn {
-  display: inline-block;
-  width: 48%;
-  padding: 0.5rem;
-  border: 0;
-  border-radius: 6px;
+.form-element {
+    margin-bottom: 0.5rem;
 }
 
-.btn-submit {
-  background-color: var(--form-accent-color);
-  color: white;
-  border: none;
-  border-radius: 4px;
+.form-label {
+    display: inline-block;
+    width: 48%;
 }
 
-.btn-submit:hover {
-  background-color: var(--form-midnight-blue);
-}
-
-.btn-reset {
-  background-color: var(--gray-border);
-}
-
-.btn-reset:hover {
-  background-color: gray;
-}
-
-.form-note {
-  font-size: 0.8rem;
-}
-
-.form-fieldset {
-  border: 0;
-  padding: 0;
-  margin: 0;
+.form-input {
+    display: inline-block;
+    width: 44%;
+    border: 1px solid var(--gray-border);
+    border-radius: 6px;
+    padding: 0.5rem;
 }
 
 .form-radios {
-  margin-left: 2rem;
-  margin-bottom: 0.75rem;
+    margin-left: 40px;
+    margin-bottom: 0.75rem;
+}
+
+.form-element:last-of-type {
+    margin: 2rem o;
+}
+
+.btn {
+    display: inline-block;
+    width: 49%;
+    border: 0;
+    padding: 0.65rem 1rem;
+    border-radius: 6px;
+}
+
+.btn-submit {
+    background-color: var(--midnight-blue);
+    color: var(--form-white);
+}
+
+.btn-submit:hover {
+    background-color: var(--midnight-blue-dark);
+}
+
+.form-note {
+    font-size: 0.8rem;
+}
+
+.form-note a {
+    color: var(--midnight-blue);
 }
