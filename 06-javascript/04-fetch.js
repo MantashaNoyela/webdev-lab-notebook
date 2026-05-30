@@ -123,4 +123,27 @@ const fetchDataAll = async function () {
   }
 };
 
+//fetchDataAll();
+
 fetchDataAll();
+
+const searchInput = document.querySelector('#searchPokemon');
+
+searchInput.addEventListener('keyup', () => {
+  const searchValue = searchInput.value.toLowerCase();
+
+  const cards = document.querySelectorAll('.pokemonCard');
+
+  cards.forEach((card) => {
+    const pokemonName = card
+      .querySelector('h2')
+      .textContent
+      .toLowerCase();
+
+    if (pokemonName.includes(searchValue)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
