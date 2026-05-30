@@ -22,12 +22,10 @@ const server = http.createServer((req, res) => {
 
     req.on('data', (chunk) => {
       body += chunk;
-      console.log(body);
     });
 
     req.on('end', () => {
       const userdata = querystring.parse(body);
-      console.log(userdata);
       const { nameInput: name, emailInput: email } = userdata;
 
       res.writeHead(200, { 'Content-Type': 'text/html' });
