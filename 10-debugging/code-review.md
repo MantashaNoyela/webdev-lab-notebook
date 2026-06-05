@@ -124,3 +124,28 @@ const fetchCatFacts = async function () {
   }
 };
 ```
+
+### Issue #4: Fixed Form Width
+
+The issue, why this is an issue, and the solution:
+
+The issue is the "fixed form width" issue, meaning that the form has a fixed width of 700px. This can cause layout problems on smaller screens because the form may become too wide for the screen. This is an issue because users on smaller devices may have to scroll horizontally or may not be able to view the form comfortably. To fix this issue, we can use max-width and width: 100% so the form can shrink on smaller screens.
+
+Initial code:
+
+```CSS
+.form {
+  width: 700px;
+  margin: auto;
+}
+```
+
+Updated code:
+
+```CSS
+.form {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+}
+```
